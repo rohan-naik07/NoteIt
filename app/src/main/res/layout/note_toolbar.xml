@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@android:color/holo_orange_light"
+    android:gravity="center_vertical"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/backButtoncontainer"
+        android:layout_weight="10">
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/backButton"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkButtoncontainer"
+        android:layout_weight="10"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_check_black_24dp"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/CheckButton"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="70"
+        android:id="@+id/note_title"
+        android:textColor="#ffff"
+        android:text="This Note"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="23sp"
+        android:visibility="visible"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="70"
+        android:id="@+id/note_edit"
+        android:textColor="#000"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="#ffff"
+        android:textSize="23sp"
+        android:padding="2dp"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/low_pr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_weight="10"
+        android:background="@drawable/ic_low_priority_black_24dp"
+        android:visibility="visible"/>
+    <ImageButton
+        android:id="@+id/high_pr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_weight="10"
+        android:background="@drawable/ic_priority_high_black_24dp"
+        android:visibility="gone"/>
+
+</LinearLayout>
